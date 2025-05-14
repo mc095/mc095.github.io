@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-14T15:00:29+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Minimal Blog</title><subtitle>A minimal Jekyll blog inspired by Karpathy&apos;s site. Simple, clean, and focused on content.
+</subtitle><entry><title type="html">Hello World</title><link href="http://localhost:4000/2025/05/14/hello-world/" rel="alternate" type="text/html" title="Hello World" /><published>2025-05-14T00:00:00+05:30</published><updated>2025-05-14T00:00:00+05:30</updated><id>http://localhost:4000/2025/05/14/hello-world</id><content type="html" xml:base="http://localhost:4000/2025/05/14/hello-world/"><![CDATA[<h1 id="my-first-blog-post">My First Blog Post</h1>
+
+<p><img src="/assets/images/rss.png" alt="Featured Image" /></p>
+
+<p>This is my first blog post using Jekyll.</p>
+
+<h2 id="section-with-multiple-images">Section with Multiple Images</h2>
+
+<div class="image-grid">
+  <img src="/assets/images/rss.png" alt="Image 1" />
+  <img src="/assets/images/rss.png" alt="Image 2" />
+</div>
+
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+
+<p><em>italic</em> or <em>italic</em>
+<strong>bold</strong> or <strong>bold</strong>
+<strong><em>bold italic</em></strong>
+<del>strikethrough</del></p>
+
+<ul>
+  <li>Unordered list</li>
+  <li>Another item
+    <ul>
+      <li>Nested item</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>Ordered list</li>
+  <li>
+    <p>Second item
+a. Sub-item</p>
+
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+ <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, World!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>This is a blockquote
+Multiple lines</p>
+</blockquote>
+
+<p><a href="URL">Link text</a>
+<a href="URL" title="Title">Link with title</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[This is my first blog post using Jekyll. Jekyll is a static site generator that transforms your plain text into static websites and blogs.]]></summary></entry></feed>

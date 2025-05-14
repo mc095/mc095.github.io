@@ -1,0 +1,14 @@
+title: My Linux Journey
+description: Series of Blogs of my linux learning
+baseurl: "/mc095.github.io"
+url: "https://mc095.github.io"
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git

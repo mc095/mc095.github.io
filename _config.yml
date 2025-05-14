@@ -1,6 +1,6 @@
 title: My Linux Journey
 description: Series of Blogs of my linux learning
-baseurl: "/mc095.github.io"
+baseurl: ""
 url: "https://mc095.github.io"
 
 markdown: kramdown

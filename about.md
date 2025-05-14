@@ -11,5 +11,5 @@ permalink: /about/
 
   <h2>Contact</h2>
 
-  <p>you can reach me at <a href="mailto:ganeshvathumilli@gmail.com">email</a> or connect with me on <a href="https://github.com/mc095">github</a>.</p>
+  <p>you can reach me at <a href="mailto:ganeshvathumilli@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/ganesh097/">linkedin</a>.</p>
 </div>

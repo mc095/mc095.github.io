@@ -11,5 +11,5 @@ permalink: /about/
 
   <h3>Contact</h3>
 
-  <p>you can reach me at <a href="mailto:ganeshvathumilli@gmail.com">email</a> 
+  <p>you can reach me at <a href="mailto:ganeshvathumilli@gmail.com">email</a></p>
 </div>

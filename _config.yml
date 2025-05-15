@@ -2,7 +2,10 @@ title: My Linux Journey
 description: Series of Blogs of my linux learning
 baseurl: ""
 url: "https://mc095.github.io"
-
+paginate: 10
+plugins:
+  - jekyll-paginate
+  
 markdown: kramdown
 highlighter: rouge
 

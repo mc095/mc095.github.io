@@ -1,3 +1,5 @@
+/* @import "{{ site.theme }}"; */
+
 @font-face {
   font-family: 'SF Pro Display';
   src: url('../fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
@@ -10,6 +12,15 @@
   src: url('../fonts/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
   font-weight: 200;
   font-style: italic;
+}
+
+.post-list h3 .post-link {
+  color: #0066cc !important;
+  text-decoration: none !important;
+}
+
+.post-list h3 .post-link:hover {
+  text-decoration: none !important;
 }
 
 * {
@@ -280,4 +291,35 @@ blockquote {
   padding-left: 20px;
   border-left: 4px solid #ddd;
   color: #666;
+}
+
+
+
+
+
+
+.pagination {
+  text-align: center;
+  padding: 20px 0;
+  
+  a, em, span {
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    
+    &:hover {
+      background-color: #f5f5f5;
+      text-decoration: none;
+    }
+  }
+  
+  em {
+    background-color: #f5f5f5;
+    font-style: normal;
+  }
+  
+  span {
+    color: #999;
+  }
 }

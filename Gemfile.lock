@@ -284,7 +284,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-paginate
   logger
-  minima (~> 2.5)
   tzinfo-data
   webrick (~> 1.8)
 

@@ -15,3 +15,16 @@ exclude:
   - node_modules
   - vendor
   - .git
+
+keep_files:
+  - .git
+  - .svn
+  - assets
+
+# Disable caching
+sass:
+  style: expanded
+  sourcemap: development
+
+# Enable file watching
+force_polling: true

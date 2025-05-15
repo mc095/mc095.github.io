@@ -1,4 +1,7 @@
-/* @import "{{ site.theme }}"; */
+
+
+/* Import partials from `sass_dir` (defaults to `_sass`) */
+@charset "utf-8";
 
 @font-face {
   font-family: 'SF Pro Display';

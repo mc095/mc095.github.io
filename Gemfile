@@ -4,7 +4,7 @@ source "https://rubygems.org"
 # gem "jekyll", "~> 4.4.1"
 
 # This is the default theme for new Jekyll sites
-gem "minima", "~> 2.5"
+# gem "minima", "~> 2.5"
 
 # Add CSV and Logger gems (required for Ruby 3.4+)
 gem "csv"

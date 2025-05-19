@@ -303,7 +303,20 @@ blockquote {
   font-family: inherit;
 }
 
+.post-content p > code {
+  background-color: #E0E0E0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: inherit;
+  color: #101010;
+}
 
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+  color: #333;
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+}
 
 .pagination {
   text-align: center;

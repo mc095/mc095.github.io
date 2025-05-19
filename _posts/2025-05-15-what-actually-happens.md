@@ -7,7 +7,7 @@ excerpt: "Ever wondered what really goes on inside your computer when you hit th
 
 Hey everyone! Think about it – you press a tiny button, and in what feels like a blink, your entire operating system loads up, ready for you to work, play, or create. It seems like magic, right? Especially when you're greeted with your familiar Linux desktop. But trust me, there's no sorcery involved, just a well-orchestrated series of events happening behind the scenes.
 
-Today, I want to pull back the curtain and take you on a detailed, step-by-step journey of what actually happens when you switch on a computer with a Linux operating system. We'll start from the moment electricity flows into your machine and follow the intricate dance of hardware and software until you see your beautiful desktop environment. Don't worry if you're new to this – I'll explain everything in a way that's easy to grasp. Let's demystify the boot process together!
+Today, I want to pull back the curtain and take you on a detailed, step-by-step journey of what actually happens when you switch on a computer with a Linux operating system. We'll start from the moment electricity flows into your machine and follow the intricate flow of hardware and software until you see your desktop environment. Don't worry if you're new to this – I'll explain everything in a way that's easy to grasp. 
 
 <div style="display: flex; flex-direction: column; align-items: center;">
   <img src="/assets/blog/2025-05-15-what-actually-happens/3.png" alt="os-1" style="width: 85%;" />
@@ -17,7 +17,7 @@ Today, I want to pull back the curtain and take you on a detailed, step-by-step 
 
 <h3 style="text-decoration: underline;">Powering On</h3>
 
-The very first thing that happens is, well, you hit the power button! This simple action completes an electrical circuit, allowing power to flow from your power supply unit (PSU) to the various components of your computer. Think of it like flipping a switch to turn on a complex machine.
+The very first thing that happens is, well, you hit the power button! This simple action completes an electrical circuit, allowing power to flow from your power supply unit (PSU) to the various components of your computer. 
 
 * **Power Supply Unit (PSU) Activation:** The PSU converts the AC power from your wall outlet into the DC power that your computer's components need to function. When you press the power button, you're essentially telling the PSU to start this conversion and distribute power.
 
@@ -36,7 +36,7 @@ With power flowing and the "Power Good" signal received, the central processing 
 
 <!--  assets\blog\2025-05-15-what-actually-happens\1.png  -->
 
-* **The Role of ROM (Read-Only Memory):** This is where the **firmware** comes in. Firmware is software that's permanently stored on a small chip on your motherboard. Historically, this firmware was known as the **BIOS (Basic Input/Output System)**. Modern systems, however, increasingly use a more advanced firmware called **UEFI (Unified Extensible Firmware Interface)**. Both BIOS and UEFI perform similar initial functions, but UEFI offers more features and flexibility. Think of the firmware as the computer's built-in startup instructions.
+* **The Role of ROM (Read-Only Memory):** This is where the **[firmware](https://www.fortinet.com/resources/cyberglossary/what-is-firmware)** comes in. Firmware is software that's permanently stored on a small chip on your motherboard. Historically, this firmware was known as the **BIOS (Basic Input/Output System)**. Modern systems, however, increasingly use a more advanced firmware called **UEFI (Unified Extensible Firmware Interface)**. Both BIOS and UEFI perform similar initial functions, but UEFI offers more features and flexibility. Think of the firmware as the computer's built-in startup instructions.
 
 * **Executing the Firmware:** The CPU is hardwired to look for and execute the code stored in the firmware chip. This is the very first piece of software that runs when you turn on your computer.
 
@@ -58,7 +58,7 @@ The first crucial task of the BIOS/UEFI is to perform a **POST (Power-On Self-Te
 
 
 
-<h3 style="text-decoration: underline;">Finding the Starting Point: Boot Device Selection</h3>
+<h3 style="text-decoration: underline;">Starting Point: Boot Device Selection</h3>
 
 Once the hardware is deemed healthy, the BIOS/UEFI needs to figure out where to load the operating system from. This is where the boot device selection comes in.
 

@@ -1,6 +1,6 @@
 # My Linux Journey Blog
 
-A minimal, clean Jekyll blog inspired by [Karpathy](https://karpathy.ai/)'s blog design. This blog features my learning journey of Linux Operating System (RHEL)
+A minimal, clean [Jekyll](https://jekyllrb.com/) blog inspired by [Karpathy](https://karpathy.ai/)'s blog design. This blog features my learning journey of Linux Operating System (RHEL)
 
 ## Key Dependencies :
 

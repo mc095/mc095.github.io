@@ -6,7 +6,8 @@ layout: default
   {% if site.posts.size > 0 %}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {% for post in paginator.posts %}
+      {% assign sorted_posts = paginator.posts | sort: 'date' %}
+      {% for post in sorted_posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h3>

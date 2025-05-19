@@ -293,11 +293,15 @@ blockquote {
   margin: 20px 0;
   padding-left: 20px;
   border-left: 4px solid #ddd;
-  color: #666;
+  color: #191313;
 }
 
-
-
+.post-content code {
+  background-color: #273543;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: inherit;
+}
 
 
 

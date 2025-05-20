@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "From Power Button to Desktop : Deep Dive"
+title: "From Power Button to Desktop: Deep Dive"
 date: 2025-05-15
-excerpt: "Ever wondered what really goes on inside your computer when you hit that power button and your Linux desktop magically appears? Join me as we take a beginner-friendly journey through the fascinating process of booting up a Linux system, step by step!"
+excerpt: "This post provides a detailed examination of the Linux boot process, from power-on to desktop environment initialization, covering firmware, bootloader, kernel, and system services for a comprehensive understanding of system startup."
 ---
 
 Hey everyone! Think about it – you press a tiny button, and in what feels like a blink, your entire operating system loads up, ready for you to work, play, or create. It seems like magic, right? Especially when you're greeted with your familiar Linux desktop. But trust me, there's no sorcery involved, just a well-orchestrated series of events happening behind the scenes.

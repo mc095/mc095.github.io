@@ -3,11 +3,30 @@ description: Series of Blogs of my linux learning
 baseurl: "" # Keep empty for local development
 url: "https://mc095.github.io"
 paginate: 8
+paginate_path: "/page:num/"
 plugins:
   - jekyll-paginate
   
 markdown: kramdown
 highlighter: rouge
+
+# Sort posts by date in ascending order (oldest first)
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+    sort_by: date
+    sort_order: ascending
+
+# Default sort order for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      sort_by: date
+      sort_order: ascending
 
 exclude:
   - Gemfile

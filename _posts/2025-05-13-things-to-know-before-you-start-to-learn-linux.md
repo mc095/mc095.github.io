@@ -11,7 +11,7 @@ So, you're curious about Linux? That's awesome! It's a powerful and versatile op
 Imagine your computer as a stack of different layers, each with its own job. Linux fits into this stack in a pretty cool way. Here's a simple breakdown:
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-13-Things-OS/1.png" alt="os-1" style="width: 100%;" />
+  <img src="/assets/blog/2025-05-13-things-to-know-before-you-start-to-learn-linux/1.png" alt="os-1" style="width: 100%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 1: Core Components of Linux Machine</span>
 </div>
 
@@ -45,7 +45,7 @@ This is the core of the entire Linux operating system – the main program that 
 The **shell** is a program that acts as a translator between you (the user) and the kernel. It's a command interpreter, which means it takes the commands you type in (usually in text form) and turns them into instructions that the kernel can understand and execute.
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-13-Things-OS/2.png" alt="os-1" style="width: 100%; border-radius: 10px;" />
+  <img src="/assets/blog/2025-05-13-things-to-know-before-you-start-to-learn-linux/2.png" alt="os-1" style="width: 100%; border-radius: 10px;" />
   <span style="margin-top: 8px; font-style: italic; color: #555; ">Figure 2: Terminal of Linux Machine</span>
 </div>
 

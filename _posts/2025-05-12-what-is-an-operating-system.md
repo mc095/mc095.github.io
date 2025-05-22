@@ -37,7 +37,7 @@ The OS solves two big problems:
 2.  **Resource Management**: Your computer has limited resources, like its processing power (how fast it can think), its memory (where it keeps things it's currently working on), and its storage (where it keeps everything long-term). When you have multiple programs running at the same time, they all need to share these resources. The OS acts like a fair teacher, making sure each program gets its turn and doesn't hog all the resources, preventing crashes and slowdowns.
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-12-Intro-OS/1.png" alt="os-1" style="width: 40%;" />
+  <img src="/assets/blog/2025-05-12-what-is-an-operating-system/1.png" alt="os-1" style="width: 40%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 2: Overview of Operating System</span>
 </div>
 
@@ -46,7 +46,7 @@ The OS solves two big problems:
 ## The OS's Core Functions
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-12-Intro-OS/2.png" alt="os-1" style="width: 100%;" />
+  <img src="/assets/blog/2025-05-12-what-is-an-operating-system/2.png" alt="os-1" style="width: 100%;" />
   <span style="margin-top: 10px; margin-bottom:30px; font-style: italic; color: #555;">Figure 3: What the Operating System Does for You</span>
 </div>
 
@@ -168,7 +168,7 @@ Operating systems vary in design and purpose. Below, we compare two popular OS f
 Think of the **Linux kernel** as the very core engine of the operating system – it handles the most fundamental tasks like managing the CPU and memory. **Distributions** are like complete packages built around this kernel. They take the kernel and add a user interface (like the desktop you see), essential tools, and pre-installed applications to make a ready-to-use operating system. Examples of popular Linux distributions include Ubuntu, Fedora, Debian, and many more – each with its own look and feel and set of included software.
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-12-Intro-OS/3.png" alt="os-1" style="border-radius: 10px; width: 80%;" />
+  <img src="/assets/blog/2025-05-12-what-is-an-operating-system/3.png" alt="os-1" style="border-radius: 10px; width: 80%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 5: A General Idea of How Windows and Linux Perform</span>
 </div><br>
 

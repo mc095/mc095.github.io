@@ -5,26 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css?v=1">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   </head>
 <body>
+  <div class="search-overlay"></div>
+  
   <header class="site-header">
     <a href="{{ site.baseurl }}/" class="site-title">
       <img src="{{ "/assets/images/rss.png" | prepend: site.baseurl }}" alt="RSS">
       <span>{{ site.title }}</span>
     </a>
     <nav class="site-nav">
+      <button class="search-toggle" aria-label="Search">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+      </button>
       <a href="{{ site.baseurl }}/about/">About</a>
     </nav>
   </header>
+
+  <div class="search-container">
+    <div class="search-content">
+      <input type="text" class="search-input" placeholder="Search" aria-label="Search posts">
+      <div class="search-results"></div>
+    </div>
+  </div>
 
   <main>
     {{ content }}
   </main>
 
+  <button class="scroll-to-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" width="24" height="24">
+      <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </button>
+
   <footer>
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
   </footer>
+
+  <!-- Hidden data container for posts -->
+  <div id="posts-data" style="display: none;">
+    {% for post in site.posts %}
+    <div class="post-data" 
+      data-title="{{ post.title | escape }}"
+      data-url="{{ post.url | prepend: site.baseurl | escape }}"
+      data-content="{{ post.content | strip_html | strip_newlines | escape }}"
+      data-excerpt="{{ post.excerpt | strip_html | strip_newlines | escape }}"
+      data-date="{{ post.date | date: '%B %d, %Y' | escape }}">
+    </div>
+    {% endfor %}
+  </div>
+
+  <script>
+    // Scroll to top functionality
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Search functionality
+    const searchToggle = document.querySelector('.search-toggle');
+    const searchContainer = document.querySelector('.search-container');
+    const searchOverlay = document.querySelector('.search-overlay');
+    const searchInput = document.querySelector('.search-input');
+    const searchResults = document.querySelector('.search-results');
+    const postElements = document.querySelectorAll('.post-data');
+
+    // Convert post elements to array of objects
+    const postsData = Array.from(postElements).map(el => ({
+      title: el.dataset.title,
+      url: el.dataset.url,
+      content: el.dataset.content,
+      excerpt: el.dataset.excerpt,
+      date: el.dataset.date
+    }));
+
+    let searchTimeout;
+
+    function openSearch() {
+      document.body.style.overflow = 'hidden';
+      searchContainer.classList.add('visible');
+      searchOverlay.classList.add('visible');
+      searchInput.focus();
+    }
+
+    function closeSearch() {
+      document.body.style.overflow = '';
+      searchContainer.classList.remove('visible');
+      searchOverlay.classList.remove('visible');
+      searchResults.classList.remove('visible');
+      searchInput.value = '';
+    }
+
+    function highlightText(text, query) {
+      if (!query) return text;
+      const regex = new RegExp(`(${query})`, 'gi');
+      return text.replace(regex, '<mark>$1</mark>');
+    }
+
+    function getContentMatch(content, query) {
+      const index = content.toLowerCase().indexOf(query.toLowerCase());
+      if (index === -1) return null;
+      
+      const start = Math.max(0, index - 50);
+      const end = Math.min(content.length, index + 100);
+      let excerpt = content.slice(start, end);
+      
+      if (start > 0) excerpt = '...' + excerpt;
+      if (end < content.length) excerpt = excerpt + '...';
+      
+      return highlightText(excerpt, query);
+    }
+
+    searchToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (searchContainer.classList.contains('visible')) {
+        closeSearch();
+      } else {
+        openSearch();
+      }
+    });
+
+    searchOverlay.addEventListener('click', closeSearch);
+
+    searchInput.addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      const query = e.target.value.toLowerCase().trim();
+      
+      if (query.length < 2) {
+        searchResults.classList.remove('visible');
+        return;
+      }
+
+      // Add a small delay for smoother performance
+      searchTimeout = setTimeout(() => {
+        const results = postsData.filter(post => {
+          const searchableText = `${post.title} ${post.content} ${post.excerpt}`.toLowerCase();
+          return searchableText.includes(query);
+        });
+
+        if (results.length > 0) {
+          searchResults.innerHTML = results.map(post => {
+            const contentMatch = getContentMatch(post.content, query);
+            const titleMatch = highlightText(post.title, query);
+            
+            return `
+              <div class="search-result-item" onclick="window.location.href='${post.url}'">
+                <div class="search-result-header">
+                  <strong>${titleMatch}</strong>
+                  <span class="search-result-date">${post.date}</span>
+                </div>
+                ${contentMatch ? `
+                  <div class="search-result-content">
+                    ${contentMatch}
+                  </div>
+                ` : ''}
+                ${post.excerpt ? `
+                  <div class="search-result-excerpt">
+                    ${highlightText(post.excerpt, query)}
+                  </div>
+                ` : ''}
+              </div>
+            `;
+          }).join('');
+          searchResults.classList.add('visible');
+        } else {
+          searchResults.innerHTML = '<div class="search-result-item">No results found</div>';
+          searchResults.classList.add('visible');
+        }
+      }, 150);
+    });
+
+    // Close search on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchContainer.classList.contains('visible')) {
+        closeSearch();
+      }
+    });
+  </script>
 </body>
 </html>

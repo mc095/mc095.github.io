@@ -1,6 +1,6 @@
 title: mc095
 description: Series of Blogs of my linux learning
-baseurl: ""
+baseurl: "" # Keep empty for local development
 url: "https://mc095.github.io"
 paginate: 10
 plugins:
@@ -28,3 +28,8 @@ sass:
 
 # Enable file watching
 force_polling: true
+
+# Development settings
+development:
+  baseurl: ""
+  url: "http://localhost:4000"

@@ -17,13 +17,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      sort_by: date
-      sort_order: ascending
-
-# Override default sorting for pagination
-paginate:
-  sort_by: date
-  sort_order: ascending
 
 exclude:
   - Gemfile

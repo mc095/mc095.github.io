@@ -6,7 +6,10 @@ layout: default
   {% if site.posts.size > 0 %}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {% for post in paginator.posts %}
+      {% assign all_posts = site.posts | sort: 'date' %}
+      {% assign start_index = paginator.page | minus: 1 | times: paginator.per_page %}
+      {% assign end_index = start_index | plus: paginator.per_page %}
+      {% for post in all_posts limit:paginator.per_page offset:start_index %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h3>

@@ -174,6 +174,10 @@ const scrollToTopBtn = document.querySelector('.scroll-to-top');
       function closePopup(popupId) {
         const popup = document.getElementById(popupId);
         popup.classList.remove('show');
+        // Add a small delay before hiding the popup completely
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 300); // Match this with the CSS transition duration
       }
       
       document.addEventListener('DOMContentLoaded', initReadingProgress);

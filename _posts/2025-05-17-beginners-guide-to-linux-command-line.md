@@ -1,6 +1,6 @@
 ---
 layout: post 
-title: Beginner's Guide to Linux Command Line 
+title: Linux Command Line 
 date: 2025-05-17
 excerpt: Exploring the Linux terminal might seems exhausting, but it's a powerful tool. This guide covers essential commands for navigating the file system, creating and deleting files, and viewing content, unlocking greater control and efficiency.
 ---

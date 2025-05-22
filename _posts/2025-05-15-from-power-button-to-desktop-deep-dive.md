@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From Power Button to Desktop: Deep Dive"
+title: "From Power Button to Desktop"
 date: 2025-05-15
 excerpt: "This post provides a detailed examination of the Linux boot process, from power-on to desktop environment initialization, covering firmware, bootloader, kernel, and system services for a comprehensive understanding of system startup."
 ---

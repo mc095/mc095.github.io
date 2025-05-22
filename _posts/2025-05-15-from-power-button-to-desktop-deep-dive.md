@@ -10,9 +10,10 @@ Hey everyone! Think about it – you press a tiny button, and in what feels like
 Today, I want to pull back the curtain and take you on a detailed, step-by-step journey of what actually happens when you switch on a computer with a Linux operating system. We'll start from the moment electricity flows into your machine and follow the intricate flow of hardware and software until you see your desktop environment. Don't worry if you're new to this – I'll explain everything in a way that's easy to grasp. 
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-15-what-actually-happens/3.png" alt="os-1" style="width: 85%;" />
+  <img src="/assets/blog/2025-05-15-from-power-button-to-desktop-deep-dive/3.png" alt="os-1" style="width: 85%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 1: Boot Process</span>
 </div>
+
 
 
 <h3 style="text-decoration: underline;">Powering On</h3>
@@ -30,7 +31,7 @@ With power flowing and the "Power Good" signal received, the central processing 
 * **CPU Initialization:** The CPU starts executing instructions from a predefined memory location. At this very early stage, the main system memory (RAM) is usually empty or contains random data, so the CPU needs to look for instructions elsewhere.
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-15-what-actually-happens/1.png" alt="os-1" style="width: 85%;" />
+  <img src="/assets/blog/2025-05-15-from-power-button-to-desktop-deep-dive/1.png" alt="os-1" style="width: 85%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 2: How BIOS/UEFI works</span>
 </div>
 
@@ -102,7 +103,7 @@ The **init system** is the very first user-space process that starts after the k
 
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-15-what-actually-happens/2.png" alt="os-1" style="width: 85%;" />
+  <img src="/assets/blog/2025-05-15-from-power-button-to-desktop-deep-dive/2.png" alt="os-1" style="width: 85%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 5: init.d in Kernel</span>
 </div>
 

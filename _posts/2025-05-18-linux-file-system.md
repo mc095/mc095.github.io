@@ -26,7 +26,7 @@ The single root directory (`/`) in Linux is a fundamental design principle that 
 
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-18-fs/1.png" alt="os-1" style="width: 70%;" />
+  <img src="/assets/blog/2025-05-18-linux-file-system/1.png" alt="os-1" style="width: 70%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 2: Linux vs Windows File System</span>
 </div>
 

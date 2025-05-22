@@ -18,7 +18,7 @@ The terminal is a fundamental part of how Linux works, and understanding even a 
 <br>
 
 <div style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/blog/2025-05-17-funda/1.png" alt="os-1" style="width: 60%;" />
+  <img src="/assets/blog/2025-05-17-beginners-guide-to-linux-command-line/1.png" alt="os-1" style="width: 60%;" />
   <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 1 : Notations</span>
 </div>
 

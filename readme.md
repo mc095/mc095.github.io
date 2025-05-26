@@ -8,3 +8,6 @@ A minimal, clean [Jekyll](https://jekyllrb.com/) blog inspired by [Karpathy](htt
 - webrick (v1.8) - Web server toolkit for Ruby
 - csv and logger - Ruby utilities
 - tzinfo-data - Timezone support for Windows
+
+
+Create a Pull Request to make a contribution :)

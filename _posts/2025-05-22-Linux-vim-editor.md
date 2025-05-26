@@ -6,10 +6,7 @@ excerpt: "Understand VI editor and its modal architecture, covering essential co
 ---
 
 
-
 The VI editor (and its enhanced cousin, Vim – Vi Improved) is undeniably one of them. While graphical text editors offer comfort, VI is the bedrock of text manipulation in the Linux command-line environment. It's ubiquitous, lightning-fast once mastered, and incredibly powerful. My first encounter with VI was, to be frank, frustrating.
-
-
 
 
 
@@ -34,6 +31,7 @@ The VI editor (and its enhanced cousin, Vim – Vi Improved) is undeniably one o
 - [Working with Files](#working-with-files)
   - [Multi-File Editing](#multi-file-editing)
         
+<br>
 
 ## Understanding VI's Core Philosophy
 
@@ -206,3 +204,5 @@ One of VI's more advanced, but incredibly useful, features is the ability to spl
 
 
 Using split screens drastically improves my productivity when dealing with related configuration files or comparing code versions.
+
+[home](https://mc095.github.io/page2/)

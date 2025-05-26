@@ -351,4 +351,4 @@ File management in Linux is more than just knowing a list of commands; it's a de
 
 <br>
 
-[home](https://mc095.github.io/)
+[home](https://mc095.github.io/page2/)

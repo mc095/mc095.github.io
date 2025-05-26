@@ -120,9 +120,13 @@ Different Linux distributions use different package managers. Here's a quick loo
 | Linux Distribution(s)                                    | Package Manager                                                 |
 | -------------------------------------------------------- | --------------------------------------------------------------- |
 | Ubuntu, Debian                                           | [apt](https://documentation.ubuntu.com/server/how-to/software/package-management/index.html) (Advanced Package Tool)                                     |
-| Fedora, Red Hat Enterprise Linux (RHEL), CentOS (Legacy) | [dnf](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_software_with_the_dnf_tool/index) (Dandified Yum) / [yum](https://access.redhat.com/articles/yum-cheat-sheet) (Yellowdog Updater, Modified - older) |
+| Fedora, Red Hat Enterprise Linux (RHEL), CentOS (Legacy) | [dnf ( Dandified YUM)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_software_with_the_dnf_tool/index) (Dandified Yum) / [yum (Yellowdog Updater Modified)](https://access.redhat.com/articles/yum-cheat-sheet) (Yellowdog Updater, Modified - older) |
 | Arch Linux                                               | [pacman](https://wiki.archlinux.org/title/Pacman) (Package Manager)                                        |
 | openSUSE                                                 | [zypper](https://documentation.suse.com/smart/systems-management/html/concept-zypper/index.html)                                                          |
+
+<br>
+
+[Learn more](https://phoenixnap.com/kb/dnf-vs-yum)
 
 ### Why You Absolutely Need to Run apt update (or its Equivalent) After a Fresh Install:
 

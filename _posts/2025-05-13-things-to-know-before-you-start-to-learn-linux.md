@@ -86,6 +86,13 @@ Here are a few popular Linux distributions you might encounter:
 
 * **Alpine Linux**: A very lightweight and security-focused distribution, often used in containers (a way to package software and its dependencies).
 
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <img src="/assets/blog/2025-05-13-things-to-know-before-you-start-to-learn-linux/3.png" alt="os-1" style="width: 75%;" />
+  <span style="margin-top: 8px; font-style: italic; color: #555;">Figure 3: Services associated with Distros </span>
+</div>
+
+<br>
+
 Choosing a distribution is often the first step when starting with Linux. For beginners, Ubuntu, Linux Mint, or elementary OS are often good starting points due to their ease of use and strong community support.
 
 ### Want to Dig Deeper?
